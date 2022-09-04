@@ -21,13 +21,13 @@
 # 网站图标
 favicon:
   enable: true
-  icon: /images/favicon.png
-  touch_icon: /images/favicon.png
+  icon: /images/icons8-espresso-cup-100-newest.png
+  touch_icon: /images/icons8-espresso-cup-100-newest.png
 
 # 用户头像与昵称
 avatar:
-  author_photo: /images/avatar.png
-  author_nickname: Oranges
+  author_photo: /images/seth-datathon-square2.jpg
+  author_nickname: sethmachine
   path: /
 
 # Google 分析
@@ -35,8 +35,8 @@ avatar:
 # 注册Google分析账号，在管理/创建媒体资源/选择网站/填写相关信息后得到跟踪Id，一般格式为UA-xxxxxxx-x
 # 如之前已有注册账号，在管理/跟踪信息/跟踪代码/找到跟踪ID，一般格式为UA-xxxxxxx-x
 gtag:
-  enable: false
-  gtagkey: UA-xxxxxxx-x
+  enable: true
+  gtagkey: G-FG2L3F19SM
 
 # 文章评论系统
 comments:
@@ -69,8 +69,8 @@ comments:
     # https://disqus.com/
     # 注册账号，获取shortname.disqus.com，shortname为你定义的唯一name
     # 例：我注册配置完毕后的网址为zxcxxxx.disqus.com，https-zxcxxxx-github-io即为shortname
-    enable: false
-    shortname: https-zxcxxxx-github-io
+    enable: true
+    shortname: sethmachine01
   
   # waline https://waline.js.org
   waline:
@@ -80,13 +80,18 @@ comments:
 # 主题页面导航栏
 navbar:
   -
-    name: Home
+    name: Blog
     enable: true
     path: /
     key: home
   -
-    name: Archives
+    name: About
     enable: true
+    path: /about/
+    key: about
+  -
+    name: Archives
+    enable: false
     path: /archives/
     key: archives
   -
@@ -101,15 +106,9 @@ navbar:
     key: tags
   -
     name: Friends
-    enable: true
+    enable: false
     path: /friends/
     key: friends
-  -
-    name: About
-    enable: true
-    path: /about/
-    key: about
-
 # 文章目录
 catalog:
   enable: true
@@ -145,7 +144,11 @@ footer:
     -
       name: github
       icon: github
-      path: https://github.com/zchengsite/hexo-theme-oranges
+      path: https://github.com/sethmachine
+    -
+      name: email
+      icon: envelope
+      path: sdworman@brandeis.edu
     # -
     #   name: email
     #   icon: envelope
@@ -178,11 +181,15 @@ footer:
     # 一般用来显示根据各种场景需要切换的文本，如时间年份
     # 如：{thisYear} 会被替换为今年年份
     -
-      name: Copyright © {thisYear} Oranges
+      name: Copyright © sethmachine {thisYear}
       path: https://github.com/zchengsite/hexo-theme-oranges
     -
       name: Theme by Oranges | Powered by Hexo
       path: https://github.com/zchengsite/hexo-theme-oranges
+
+    -
+      name: Espresso Cup icon by Icons8
+      path: https://icons8.com/icons/set/espresso-cup
 
   # 浏览量统计
   # http://busuanzi.ibruce.info/
@@ -208,7 +215,7 @@ footer:
 
 # 文章搜索
 search:
-  enable: true
+  enable: false
   placeholder: 
 
 # 深/浅配色切换
